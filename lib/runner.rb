@@ -4,6 +4,10 @@ class Puzzle
   def self.from_input
     new(File.read('input.txt'))
   end
+
+  def self.sample
+    File.read('sample.txt')
+  end
 end
 
 class PuzzleRunner
