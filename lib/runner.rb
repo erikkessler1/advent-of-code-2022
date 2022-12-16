@@ -42,9 +42,9 @@ class PuzzleRunner
   def test_sample(part:)
     print "  TESTING SAMPLE... "
 
-    input, answer = day.send("part_#{part}_sample")
+    (input, *args), answer = day.send("part_#{part}_sample")
     puzzle = day.new(input)
-    result = puzzle.send("solve_part_#{part}")
+    result = puzzle.send("solve_part_#{part}", *args)
 
     if result != answer
       puts "FAILED!"
