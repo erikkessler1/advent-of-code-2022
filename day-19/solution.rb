@@ -204,4 +204,4 @@ class Blueprint
   end
 end
 
-PuzzleRunner.run(Day19, part: 2)
+PuzzleRunner.run(Day19)

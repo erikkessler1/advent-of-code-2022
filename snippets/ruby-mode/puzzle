@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: aoc_puzzle
+# key: aoc
+# contributor: Erik Kessler
+# --
+require_relative './../lib/runner'
+
+class Day$1 < Puzzle
+  def self.part_1_sample
+    [sample, $2]
+  end
+
+  def self.part_2_sample
+    [sample, nil]
+  end
+
+  def initialize(input)
+    input.split("\n")$0
+  end
+
+  def solve_part_1
+    nil
+  end
+
+  def solve_part_2
+    nil
+  end
+end
+
+PuzzleRunner.run(Day$1)
